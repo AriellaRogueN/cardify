@@ -1,6 +1,8 @@
+'use strict';
 
+const $ = require('jquery');
 
-$(document).ready(function() {
+$(document).ready(function()
   $(".content img").mouseover(function(){
        
     let imagenFifure = $(this).attr("alt");
@@ -57,5 +59,4 @@ $(document).ready(function() {
 
 
 
-
-
+  
