@@ -11,29 +11,40 @@ $(document).ready(function() {
            'border': '3px solid #eee',
            'width': '250px',
            'margin':'30px',
+           'z-index' : '10',
+           
+         })    
+   $('content').css({
+          'float':'left',
+          'width':'30%',
 
+           
          })    
    
        
      $('figure').append('<figcaption>' + imagenFifure + '</figcaption>')
-    $('figcaption').css({'display':'block',
-                        'width':'90%',
-                       
-
-
-          
-
+    $('figcaption').css({'text-align': 'center',
+     'padding': '5px 10px',
+     'border-radius': '2px',
+     'display': 'inline-block',
+     'background': '#ed4e6e',
+     'color': '#fff',
+     'width':'93%',
+                    
            
         });
 
  });
 
     })
+  });
    $(".content img").mouseout(function(){
     $('img').unwrap();
-   $('figcaption').empty();
+   $('figcaption').remove();
+   
+       
  }); 
-});
+
   
 
 
